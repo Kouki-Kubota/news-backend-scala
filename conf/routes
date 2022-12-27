@@ -8,3 +8,9 @@ GET     /                           controllers.HomeController.index()
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
+
++nocsrf
+GET     /getNewsApiCategory         controllers.endpoints.GetNewsCategoryController.getNewsApiCategory(category: String)
+
++nocsrf
+GET     /getHomeNewsApi             controllers.endpoints.GetHomeNewsApiController.getHomeNewsApi()
