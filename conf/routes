@@ -14,3 +14,5 @@ GET     /getNewsApiCategory         controllers.endpoints.GetNewsCategoryControl
 
 +nocsrf
 GET     /getHomeNewsApi             controllers.endpoints.GetHomeNewsApiController.getHomeNewsApi()
+
+GET     /getBookmarkData            controllers.endpoints.BookmarkController.index()
