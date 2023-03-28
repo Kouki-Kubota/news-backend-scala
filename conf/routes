@@ -15,4 +15,11 @@ GET     /getNewsApiCategory         controllers.endpoints.GetNewsCategoryControl
 +nocsrf
 GET     /getHomeNewsApi             controllers.endpoints.GetHomeNewsApiController.getHomeNewsApi()
 
++nocsrf
 GET     /getBookmarkData            controllers.endpoints.BookmarkController.index()
+
++noncsrf
+GET     /insertBookmarkData         controllers.endpoints.BookmarkController.insert(image_url: String, article_title: String, article_url: String)
+
++noncsrf
+GET     /deleteBookmarkData         controllers.endpoints.BookmarkController.delete(url: String)
